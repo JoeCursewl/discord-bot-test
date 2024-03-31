@@ -1,7 +1,5 @@
 import discord
 
-
-BRD_BOT_ALL_THING = 'MTEyMjYyMjE3NDIyMjYzNTExMA.GQnrZT.GTAB5zsA7q5m8kSg5bpSVYQcrV5bqPWUdM8E9s'
 class BotBrd(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
@@ -12,4 +10,4 @@ class BotBrd(discord.Client):
 
 
 client = BotBrd()
-client.run(BRD_BOT_ALL_THING)
+client.run("")
