@@ -1,5 +1,7 @@
 import discord
 
+
+BRD_BOT_ALL_THING = 'MTEyMjYyMjE3NDIyMjYzNTExMA.GQnrZT.GTAB5zsA7q5m8kSg5bpSVYQcrV5bqPWUdM8E9s'
 class BotBrd(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
@@ -7,5 +9,7 @@ class BotBrd(discord.Client):
     async def on_message(self, message):
         print(f'Message from {message.author}: {message.content}')
 
+
+
 client = BotBrd()
-client.run('MTEyMjYyMjE3NDIyMjYzNTExMA.GQnrZT.GTAB5zsA7q5m8kSg5bpSVYQcrV5bqPWUdM8E9s')
+client.run(BRD_BOT_ALL_THING)
